@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:admin/constants.dart';
-import 'package:admin/controllers/MenuController.dart';
+import 'package:admin/controllers/MenuAppController.dart';
 import 'package:admin/screens/main/main_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
       home: MultiProvider(
         providers: [
           ChangeNotifierProvider(
-            create: (context) => MenuController(),
+            create: (context) => MenuAppController(),
           ),
         ],
         child: MainScreen(),
