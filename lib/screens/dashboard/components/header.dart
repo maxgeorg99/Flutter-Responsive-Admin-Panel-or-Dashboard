@@ -80,7 +80,7 @@ class SearchField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        hintText: "Search",
+        hintText: "Search for patient name or id",
         fillColor: secondaryColor,
         filled: true,
         border: OutlineInputBorder(
